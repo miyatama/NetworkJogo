@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsNetworkInfo" targetNamespace="http://tempuri.org/dsNetworkInfo.xsd" xmlns:mstns="http://tempuri.org/dsNetworkInfo.xsd" xmlns="http://tempuri.org/dsNetworkInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsNetworkInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsNetworkInfo" msprop:Generator_UserDSName="dsNetworkInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IPADDR_LIST" msprop:Generator_TableClassName="IPADDR_LISTDataTable" msprop:Generator_TableVarName="tableIPADDR_LIST" msprop:Generator_TablePropName="IPADDR_LIST" msprop:Generator_RowDeletingName="IPADDR_LISTRowDeleting" msprop:Generator_UserTableName="IPADDR_LIST" msprop:Generator_RowChangingName="IPADDR_LISTRowChanging" msprop:Generator_RowEvHandlerName="IPADDR_LISTRowChangeEventHandler" msprop:Generator_RowDeletedName="IPADDR_LISTRowDeleted" msprop:Generator_RowEvArgName="IPADDR_LISTRowChangeEvent" msprop:Generator_RowChangedName="IPADDR_LISTRowChanged" msprop:Generator_RowClassName="IPADDR_LISTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IPADDR_STR" msprop:Generator_ColumnVarNameInTable="columnIPADDR_STR" msprop:Generator_ColumnPropNameInRow="IPADDR_STR" msprop:Generator_ColumnPropNameInTable="IPADDR_STRColumn" msprop:Generator_UserColumnName="IPADDR_STR" type="xs:string" minOccurs="0" />
+              <xs:element name="HOSTNAME" msprop:Generator_ColumnVarNameInTable="columnHOSTNAME" msprop:Generator_ColumnPropNameInRow="HOSTNAME" msprop:Generator_ColumnPropNameInTable="HOSTNAMEColumn" msprop:Generator_UserColumnName="HOSTNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MAC_ADDR" msprop:Generator_ColumnVarNameInTable="columnMAC_ADDR" msprop:Generator_ColumnPropNameInRow="MAC_ADDR" msprop:Generator_ColumnPropNameInTable="MAC_ADDRColumn" msprop:Generator_UserColumnName="MAC_ADDR" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Interfaces" msprop:Generator_TableClassName="InterfacesDataTable" msprop:Generator_TableVarName="tableInterfaces" msprop:Generator_TablePropName="Interfaces" msprop:Generator_RowDeletingName="InterfacesRowDeleting" msprop:Generator_UserTableName="Interfaces" msprop:Generator_RowChangingName="InterfacesRowChanging" msprop:Generator_RowEvHandlerName="InterfacesRowChangeEventHandler" msprop:Generator_RowDeletedName="InterfacesRowDeleted" msprop:Generator_RowEvArgName="InterfacesRowChangeEvent" msprop:Generator_RowChangedName="InterfacesRowChanged" msprop:Generator_RowClassName="InterfacesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IPADDR_STR" msprop:Generator_ColumnVarNameInTable="columnIPADDR_STR" msprop:Generator_ColumnPropNameInRow="IPADDR_STR" msprop:Generator_ColumnPropNameInTable="IPADDR_STRColumn" msprop:Generator_UserColumnName="IPADDR_STR" type="xs:string" minOccurs="0" />
+              <xs:element name="SUBNET_MASK" msprop:Generator_ColumnVarNameInTable="columnSUBNET_MASK" msprop:Generator_ColumnPropNameInRow="SUBNET_MASK" msprop:Generator_ColumnPropNameInTable="SUBNET_MASKColumn" msprop:Generator_UserColumnName="SUBNET_MASK" type="xs:string" minOccurs="0" />
+              <xs:element name="NETWROK_ADDR" msprop:Generator_ColumnVarNameInTable="columnNETWROK_ADDR" msprop:Generator_ColumnPropNameInRow="NETWROK_ADDR" msprop:Generator_ColumnPropNameInTable="NETWROK_ADDRColumn" msprop:Generator_UserColumnName="NETWROK_ADDR" type="xs:string" minOccurs="0" />
+              <xs:element name="HOST_MIN" msprop:Generator_ColumnVarNameInTable="columnHOST_MIN" msprop:Generator_ColumnPropNameInRow="HOST_MIN" msprop:Generator_ColumnPropNameInTable="HOST_MINColumn" msprop:Generator_UserColumnName="HOST_MIN" type="xs:string" minOccurs="0" />
+              <xs:element name="HOST_MAX" msprop:Generator_ColumnVarNameInTable="columnHOST_MAX" msprop:Generator_ColumnPropNameInRow="HOST_MAX" msprop:Generator_ColumnPropNameInTable="HOST_MAXColumn" msprop:Generator_UserColumnName="HOST_MAX" type="xs:string" minOccurs="0" />
+              <xs:element name="HOST_COUNT" msprop:Generator_ColumnVarNameInTable="columnHOST_COUNT" msprop:Generator_ColumnPropNameInRow="HOST_COUNT" msprop:Generator_ColumnPropNameInTable="HOST_COUNTColumn" msprop:Generator_UserColumnName="HOST_COUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ISIPV6" msprop:Generator_ColumnVarNameInTable="columnISIPV6" msprop:Generator_ColumnPropNameInRow="ISIPV6" msprop:Generator_ColumnPropNameInTable="ISIPV6Column" msprop:Generator_UserColumnName="ISIPV6" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SUBNET_MASK_LEN" msprop:Generator_ColumnVarNameInTable="columnSUBNET_MASK_LEN" msprop:Generator_ColumnPropNameInRow="SUBNET_MASK_LEN" msprop:Generator_ColumnPropNameInTable="SUBNET_MASK_LENColumn" msprop:Generator_UserColumnName="SUBNET_MASK_LEN" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CaptureList" msprop:Generator_TableClassName="CaptureListDataTable" msprop:Generator_TableVarName="tableCaptureList" msprop:Generator_TablePropName="CaptureList" msprop:Generator_RowDeletingName="CaptureListRowDeleting" msprop:Generator_UserTableName="CaptureList" msprop:Generator_RowChangingName="CaptureListRowChanging" msprop:Generator_RowEvHandlerName="CaptureListRowChangeEventHandler" msprop:Generator_RowDeletedName="CaptureListRowDeleted" msprop:Generator_RowEvArgName="CaptureListRowChangeEvent" msprop:Generator_RowChangedName="CaptureListRowChanged" msprop:Generator_RowClassName="CaptureListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CAPTURE_DATE" msprop:Generator_ColumnVarNameInTable="columnCAPTURE_DATE" msprop:Generator_ColumnPropNameInRow="CAPTURE_DATE" msprop:Generator_ColumnPropNameInTable="CAPTURE_DATEColumn" msprop:Generator_UserColumnName="CAPTURE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PACKET_LENGTH" msprop:Generator_ColumnVarNameInTable="columnPACKET_LENGTH" msprop:Generator_ColumnPropNameInRow="PACKET_LENGTH" msprop:Generator_ColumnPropNameInTable="PACKET_LENGTHColumn" msprop:Generator_UserColumnName="PACKET_LENGTH" type="xs:int" minOccurs="0" />
+              <xs:element name="LINKLAYERTYPE" msprop:Generator_ColumnVarNameInTable="columnLINKLAYERTYPE" msprop:Generator_ColumnPropNameInRow="LINKLAYERTYPE" msprop:Generator_ColumnPropNameInTable="LINKLAYERTYPEColumn" msprop:Generator_UserColumnName="LINKLAYERTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_UserColumnName="DATA" type="xs:string" minOccurs="0" />
+              <xs:element name="IS_ANALYSIS_ERROR" msprop:Generator_ColumnVarNameInTable="columnIS_ANALYSIS_ERROR" msprop:Generator_ColumnPropNameInRow="IS_ANALYSIS_ERROR" msprop:Generator_ColumnPropNameInTable="IS_ANALYSIS_ERRORColumn" msprop:Generator_UserColumnName="IS_ANALYSIS_ERROR" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ANALYSIS_ERROR_MSG" msprop:Generator_ColumnVarNameInTable="columnANALYSIS_ERROR_MSG" msprop:Generator_ColumnPropNameInRow="ANALYSIS_ERROR_MSG" msprop:Generator_ColumnPropNameInTable="ANALYSIS_ERROR_MSGColumn" msprop:Generator_UserColumnName="ANALYSIS_ERROR_MSG" type="xs:string" minOccurs="0" />
+              <xs:element name="SOURCE_ADDR" msprop:Generator_ColumnVarNameInTable="columnSOURCE_ADDR" msprop:Generator_ColumnPropNameInRow="SOURCE_ADDR" msprop:Generator_ColumnPropNameInTable="SOURCE_ADDRColumn" msprop:Generator_UserColumnName="SOURCE_ADDR" type="xs:string" minOccurs="0" />
+              <xs:element name="SOURCE_PORT" msprop:Generator_ColumnVarNameInTable="columnSOURCE_PORT" msprop:Generator_ColumnPropNameInRow="SOURCE_PORT" msprop:Generator_ColumnPropNameInTable="SOURCE_PORTColumn" msprop:Generator_UserColumnName="SOURCE_PORT" type="xs:int" minOccurs="0" />
+              <xs:element name="DESTINATION_ADDR" msprop:Generator_ColumnVarNameInTable="columnDESTINATION_ADDR" msprop:Generator_ColumnPropNameInRow="DESTINATION_ADDR" msprop:Generator_ColumnPropNameInTable="DESTINATION_ADDRColumn" msprop:Generator_UserColumnName="DESTINATION_ADDR" type="xs:string" minOccurs="0" />
+              <xs:element name="DESTINATION_PORT" msprop:Generator_ColumnVarNameInTable="columnDESTINATION_PORT" msprop:Generator_ColumnPropNameInRow="DESTINATION_PORT" msprop:Generator_ColumnPropNameInTable="DESTINATION_PORTColumn" msprop:Generator_UserColumnName="DESTINATION_PORT" type="xs:int" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="FRAGMENT_FLG" msprop:Generator_ColumnVarNameInTable="columnFRAGMENT_FLG" msprop:Generator_ColumnPropNameInRow="FRAGMENT_FLG" msprop:Generator_ColumnPropNameInTable="FRAGMENT_FLGColumn" msprop:Generator_UserColumnName="FRAGMENT_FLG" type="xs:int" minOccurs="0" />
+              <xs:element name="PAYLOAD_DATA" msprop:Generator_ColumnVarNameInTable="columnPAYLOAD_DATA" msprop:Generator_ColumnPropNameInRow="PAYLOAD_DATA" msprop:Generator_ColumnPropNameInTable="PAYLOAD_DATAColumn" msprop:Generator_UserColumnName="PAYLOAD_DATA" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

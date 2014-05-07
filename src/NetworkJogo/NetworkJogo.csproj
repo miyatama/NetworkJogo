@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{836921A9-D051-41C5-9C74-B40CF3E4D371}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetworkJogo</RootNamespace>
+    <AssemblyName>NetworkJogo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PacketDotNet">
+      <HintPath>.\PacketDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpPcap">
+      <HintPath>.\SharpPcap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsNetworkInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNetworkInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmPacketCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPacketCapture.Designer.cs">
+      <DependentUpon>fmPacketCapture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalInterface.Designer.cs">
+      <DependentUpon>frmLocalInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPwInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPwInput.Designer.cs">
+      <DependentUpon>frmPwInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResearchIPAddr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResearchIPAddr.Designer.cs">
+      <DependentUpon>frmResearchIPAddr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalNetworkInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="fmPacketCapture.resx">
+      <DependentUpon>fmPacketCapture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalInterface.resx">
+      <DependentUpon>frmLocalInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPwInput.resx">
+      <DependentUpon>frmPwInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResearchIPAddr.resx">
+      <DependentUpon>frmResearchIPAddr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="dsNetworkInfo.xsc">
+      <DependentUpon>dsNetworkInfo.xsd</DependentUpon>
+    </None>
+    <None Include="dsNetworkInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNetworkInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsNetworkInfo.xss">
+      <DependentUpon>dsNetworkInfo.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
